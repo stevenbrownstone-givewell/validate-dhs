@@ -1,15 +1,7 @@
 ---
 name: validate-dhs
-description: >-
-  Validate DHS microdata computations against official STATcompiler API values.
-  Use this skill whenever Claude notices DHS indicator computation in Stata logs,
-  output tables, or conversation context — including statistics like net ownership
-  rates, vaccination coverage, fertility rates, child nutrition measures, or any
-  percentage/mean that could correspond to a published DHS indicator. Also use
-  when the user mentions "STATcompiler", "DHS validation", "official indicators",
-  or asks to verify computed statistics against published DHS estimates.
+description: "Validate DHS microdata computations against official STATcompiler API values. Use this skill whenever Claude notices DHS indicator computation in Stata logs, output tables, or conversation context -- including statistics like net ownership rates, vaccination coverage, fertility rates, child nutrition measures, or any percentage/mean that could correspond to a published DHS indicator. Also use when the user mentions STATcompiler, DHS validation, official indicators, or asks to verify computed statistics against published DHS estimates."
 argument-hint: "[country-code] [survey-id-or-year] [indicator-ids-or-chapter]"
-allowed-tools: [Read, Glob, Grep, Bash, WebFetch, mcp__stata-mcp__stata_do, mcp__stata-mcp__get_data_info, mcp__stata-mcp__read_log]
 ---
 
 # Validate DHS Indicators
